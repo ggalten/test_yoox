@@ -12,4 +12,4 @@ Console.WriteLine($"punteggio p1: {currentScore.player1} p2: {currentScore.playe
 game.AddPointToPlayer1();
 game.AddPointToPlayer1();
 
-Console.WriteLine($"Vincitore è: {game.GetWinner()}");
+Console.WriteLine($"Vincitore è: {game.winner}");

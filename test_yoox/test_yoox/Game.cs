@@ -6,7 +6,7 @@ namespace software
         private int pointsPlayer1 { get; set; } = 0;
         private int pointsPlayer2 { get; set; } = 0;
         public bool gameIsOver { get; private set; } = false;
-        private Winners winner;
+        public Winners winner { get; private set; }
 
 
         public void AddPointToPlayer1()

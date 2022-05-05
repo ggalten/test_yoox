@@ -31,7 +31,7 @@ namespace testing
             score.player1.Should().NotBe(Scores.Forty);
             score.player2.Should().Be(Scores.Thirty);
 
-            sut.GetWinner().Should().Be(Winners.Player1);
+            sut.winner.Should().Be(Winners.Player1);
         }
 
         [Test]
@@ -52,7 +52,7 @@ namespace testing
             score.player1.Should().Be(Scores.Advantage);
             score.player2.Should().BeNull();
 
-            sut.GetWinner().Should().Be(Winners.Player1);
+            sut.winner.Should().Be(Winners.Player1);
         }
 
         [Test]
